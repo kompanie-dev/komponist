@@ -1,0 +1,16 @@
+{
+        "name": "@kompanie/komponist",
+        "version": "1.0.0",
+        "license": "MIT",
+        "repository": "github:kompanie-dev/komponist",
+        "files": [
+                "/source",
+                "/index.css"
+        ],
+        "scripts": {
+                "start": "npx parcel demo/index.html --dist-dir build --no-cache --port 8000"
+        },
+        "devDependencies": {
+                "parcel": "^2.8.3"
+        }
+}

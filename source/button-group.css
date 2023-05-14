@@ -1,0 +1,16 @@
+.button-group {
+    border: 1px solid var(--element-border-color);
+    border-radius: 1rem;
+    display: inline-flex;
+    overflow: hidden;
+}
+.button-group .button {
+    border: none;
+    border-radius: 0;
+}
+.button-group .button.active,
+.button-group .button:enabled:hover {
+    background: var(--button-group-active-background);
+    border: none;
+    color: var(--font-color-hovered);
+}

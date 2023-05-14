@@ -1,0 +1,63 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --anchor-color: #06f;
+    
+        --body-background-color: #000;
+
+        --button-group-active-background: #888;
+        
+        --element-background: #333;
+        --element-background-disabled: #555;
+        --element-border-color: #333;
+        --element-border-hovered: #888;
+        --element-border-radius: 1rem;
+        --element-focus-outline: #888;
+        --element-padding: 5px 8px;
+    
+        --font-color: #ccc;
+        --font-color-disabled: #888;
+        --font-color-hovered: #000;
+        --font-family: .9rem "-apple-system", "Segoe UI", Verdana, sans-serif;
+    
+        --h1-size: 2.5rem;
+        --h2-size: 2rem;
+        --h3-size: 1.7rem;
+        --h4-size: 1.5rem;
+        --h5-size: 1.3rem;
+        --h6-size: 1.1rem;
+    
+        --input-invalid-outline: #a00;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --anchor-color: #06f;
+    
+        --body-background-color: #fff;
+
+        --button-group-active-background: #ddd;
+        
+        --element-background: #b9b9b9;
+        --element-background-disabled: #ddd;
+        --element-border-color: #b9b9b9;
+        --element-border-hovered: #555;
+        --element-border-radius: 1rem;
+        --element-focus-outline: #555;
+        --element-padding: 5px 8px;
+    
+        --font-color: #333;
+        --font-color-disabled: #999;
+        --font-color-hovered: #000;
+        --font-family: .9rem "-apple-system", "Segoe UI", Verdana, sans-serif;
+    
+        --h1-size: 2.5rem;
+        --h2-size: 2rem;
+        --h3-size: 1.7rem;
+        --h4-size: 1.5rem;
+        --h5-size: 1.3rem;
+        --h6-size: 1.1rem;
+    
+        --input-invalid-outline: #c00;
+    }
+}

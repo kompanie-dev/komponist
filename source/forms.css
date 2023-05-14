@@ -1,0 +1,63 @@
+.button,
+.input,
+.select,
+.select option,
+.textarea {
+    background: var(--element-background);
+    border: 1px solid var(--element-border-color);
+    border-radius: var(--element-border-radius);
+    color: inherit;
+    padding: var(--element-padding);
+    text-decoration: none;
+}
+
+.button:disabled,
+.input:disabled,
+.input:read-only:not([type="color"]):not([type="file"]),
+.select:disabled,
+.textarea:disabled,
+.textarea:read-only {
+    background: var(--element-background-disabled);
+    border-color: var(--element-background-disabled);
+    color: var(--font-color-disabled);
+}
+
+.button:focus-visible,
+.input:focus-visible,
+.select:focus-visible,
+.textarea:focus-visible {
+	outline: 2px solid var(--element-focus-outline);
+}
+
+a.button:hover,
+.button:hover:enabled,
+.input:hover:enabled:read-write,
+.input[type="color"]:hover:enabled,
+.input[type="file"]:hover:enabled,
+.select:hover:enabled,
+.textarea:hover:enabled:read-write {
+	border: 1px solid var(--element-border-hovered);
+}
+
+.button:hover:enabled,
+.select:enabled,
+.select option {
+    cursor: pointer;
+}
+
+.input:invalid {
+    outline: 2px solid var(--input-invalid-outline);
+}
+
+.input[type="checkbox"] {
+	clip-path: circle(50%);
+    height: 1rem;
+    width: 1rem;
+}
+
+.input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+.input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
