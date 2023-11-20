@@ -1,6 +1,10 @@
-.anchor {
-    color: var(--anchor-color);
+.a {
+	color: var(--accent-color);
+	font-size: var(--font-size);
 }
-.anchor:hover {
-    text-decoration: none;
+.a:focus {
+	outline: 2px solid var(--element-focus-outline-color);
+}
+.a:hover {
+	text-decoration: none;
 }

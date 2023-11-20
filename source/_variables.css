@@ -1,0 +1,38 @@
+:root {
+	--element-border-radius: 1rem;
+	--element-padding: 6px 9px;
+	--font-family: "-apple-system", "Segoe UI", Verdana, sans-serif;
+	--font-size: .9rem;
+
+	--accent-color: #06f;
+	--body-background-color: #000;
+	--button-group-active-background: #888;
+	--input-invalid-color: #a00;
+	--text-color: #ccc;
+
+	--element-background: #333;
+	--element-background-disabled: #555;
+	--element-border-color: #333;
+	--element-border-color-hovered: #888;
+	--element-focus-outline-color: #888;
+	--element-text-color-disabled: #888;
+	--element-text-color-hovered: #000;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--accent-color: #06f;
+		--body-background-color: #fff;
+		--button-group-active-background: #ddd;
+		--input-invalid-color: #c00;
+		--text-color: #333;
+
+		--element-background: #bbb;
+		--element-background-disabled: #ddd;
+		--element-border-color: #bbb;
+		--element-border-color-hovered: #555;
+		--element-focus-outline-color: #555;
+		--element-text-color-disabled: #999;
+		--element-text-color-hovered: #000;
+	}
+}

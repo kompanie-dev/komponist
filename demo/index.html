@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <title>Komponist Demo</title>
-<link rel="stylesheet" href="variables.css">
+<link rel="stylesheet" href="../source/_variables.css">
 <link rel="stylesheet" href="../index.css">
 <style>
 .spacer {
@@ -12,20 +12,27 @@ body {
 }
 </style>
 
-<h1 class="h1">Anchors</h1>
+<h1>Anchors</h1>
 <div class="spacer">
-    <a class="anchor" href="#">Normal link</a>
+    <a class="a" href="#">Normal link</a>
     <a href="#" class="button">Button Link</a>
 </div>
 
-<h1 class="h1">Buttons</h1>
-<h2 class="h2">Buttons</h2>
+<h1>Buttons</h1>
+<h2>Buttons</h2>
 <div class="spacer">
     <button class="button">Enabled</button>
     <button class="button" disabled>Disabled</button>
 </div>
 
-<h2 class="h2">Button Group</h2>
+<h2>Button Group</h2>
+<div class="spacer">
+    <div class="button-group">
+        <button class="button">ABC</button>
+        <button class="button">DEF</button>
+        <button class="button">XYZ</button>
+    </div>
+</div>
 <div class="spacer">
     <div class="button-group">
         <button class="button active">ABC</button>
@@ -33,101 +40,243 @@ body {
         <button class="button">XYZ</button>
     </div>
 </div>
-
-<h1 class="h1">Headings</h1>
 <div class="spacer">
-    <h1 class="h1">Header 1</h1>
-    <h2 class="h2">Header 2</h2>
-    <h3 class="h3">Header 3</h3>
-    <h4 class="h4">Header 4</h4>
-    <h5 class="h5">Header 5</h5>
-    <h6 class="h6">Header 6</h6>
+    <div class="button-group">
+        <button class="button">ABC</button>
+        <button class="button active">DEF</button>
+        <button class="button">XYZ</button>
+    </div>
+</div>
+<div class="spacer">
+    <div class="button-group">
+        <button class="button">ABC</button>
+        <button class="button">DEF</button>
+        <button class="button active">XYZ</button>
+    </div>
 </div>
 
-<h1 class="h1">Inputs</h1>
-
-<h2 class="h2">Checkbox</h2>
+<h1>Headings</h1>
 <div class="spacer">
-    <input class="input" type="checkbox" checked>
-    <input class="input" type="checkbox" checked disabled>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
 </div>
 
-<h2 class="h2">Color</h2>
+<h1>Inputs</h1>
+
+<h2>Checkbox</h2>
+<div class="spacer">
+    <div>
+        <label class="label">
+            <input class="input" type="checkbox" checked>
+            Checkbox enabled and checked
+        </label>
+    </div>
+
+    <div>
+        <label class="label">
+            <input class="input" type="checkbox">
+            Checkbox enabled and unchecked
+        </label>
+    </div>
+
+    <div>
+        <label class="label">
+            <input class="input" type="checkbox" checked disabled>
+            Checkbox disabled and checked
+        </label>
+    </div>
+
+    <div>
+        <label class="label">
+            <input class="input" type="checkbox" disabled>
+            Checkbox disabled and unchecked
+        </label>
+    </div>
+</div>
+
+<h2>Color</h2>
 <div class="spacer">
     <input class="input" type="color" value="#007700">
     <input class="input" type="color" value="#007700" disabled>
 </div>
 
-<h2 class="h2">Date</h2>
+<h2>Date</h2>
 <div class="spacer">
     <input class="input" type="date">
     <input class="input" type="date" disabled>
     <input class="input" type="date" readonly>
 </div>
 
-<h2 class="h2">E-Mail</h2>
+<h2>E-Mail</h2>
 <div class="spacer">
-    <input class="input" type="email" value="test@example.com">
-    <input class="input" type="email" value="test@example.com" disabled>
-    <input class="input" type="email" value="test@example.com" readonly>
+    <h3>Enabled</h3>
+    <input class="input" type="email" placeholder="Placeholder..." value="test@example.com">
+    <input class="input" type="email" placeholder="Placeholder...">
+
+    <div class="spacer"></div>
+
+    <h3>Disabled</h3>
+    <input class="input" type="email" placeholder="Placeholder..." value="test@example.com" disabled>
+    <input class="input" type="email" placeholder="Placeholder..." disabled>
+
+    <div class="spacer"></div>
+
+    <h3>Readonly</h3>
+    <input class="input" type="email" placeholder="Placeholder..." value="test@example.com" readonly>
+    <input class="input" type="email" placeholder="Placeholder..." readonly>
 </div>
 
-<h2 class="h2">File</h2>
+<h2>File</h2>
 <div class="spacer">
     <input class="input" type="file">
     <input class="input" type="file" disabled>
 </div>
 
-<h2 class="h2">Number</h2>
+<h2>Number</h2>
 <div class="spacer">
+    <h3>Enabled</h3>
     <input class="input" type="number" value="0">
+    <input class="input" type="number" placeholder="Placeholder...">
+
+    <div class="spacer"></div>
+
+    <h3>Disabled</h3>
     <input class="input" type="number" value="0" disabled>
+    <input class="input" type="number" placeholder="Placeholder..." disabled>
+
+    <div class="spacer"></div>
+
+    <h3>Readonly</h3>
     <input class="input" type="number" value="0" readonly>
+    <input class="input" type="number" placeholder="Placeholder..." readonly>
 </div>
 
-<h2 class="h2">Password</h2>
+<h2>Password</h2>
 <div class="spacer">
-    <input class="input" type="password" value="1234">
-    <input class="input" type="password" value="1234" disabled>
-    <input class="input" type="password" value="1234" readonly>
+    <h3>Enabled</h3>
+    <input class="input" type="password" placeholder="Placeholder..." value="1234">
+    <input class="input" type="password" placeholder="Placeholder...">
+
+    <div class="spacer"></div>
+
+    <h3>Disabled</h3>
+    <input class="input" type="password" placeholder="Placeholder..." value="1234" disabled>
+    <input class="input" type="password" placeholder="Placeholder..." disabled>
+
+    <div class="spacer"></div>
+
+    <h3>Readonly</h3>
+    <input class="input" type="password" placeholder="Placeholder..." value="1234" readonly>
+    <input class="input" type="password" placeholder="Placeholder..." readonly>
 </div>
 
-<h2 class="h2">Radio</h2>
+<h2>Radio</h2>
 <div class="spacer">
-    <input class="input" type="radio" id="radio1" name="radio-group">
-    <label for="radio1">Selection 1</label>
-    <input class="input" type="radio" id="radio2" name="radio-group" disabled>
-    <label for="radio2">Selection 2</label>
+    <div>
+        <label class="label">
+            <input class="input" type="radio" id="radio1" name="radio-group" checked>
+            Radio enabled and checked
+        </label>
+    </div>
+
+    <div>
+        <label class="label">
+            <input class="input" type="radio" id="radio2" name="radio-group">
+            Radio enabled and unchecked
+        </label>
+    </div>
+
+    <div>
+        <label class="label">
+            <input class="input" type="radio" id="radio3" name="radio-group-disabled" disabled checked>
+            Radio disabled and checked
+        </label>
+    </div>
+
+    <div>
+        <label class="label">
+            <input class="input" type="radio" id="radio3" name="radio-group-disabled" disabled>
+            Radio disabled and unchecked
+        </label>
+    </div>
 </div>
 
-<h2 class="h2">Range</h2>
+<h2>Range</h2>
 <div class="spacer">
     <input class="input" type="range">
     <input class="input" type="range" disabled>
 </div>
 
-<h2 class="h2">Tel</h2>
+<h2>Tel</h2>
 <div class="spacer">
+    <h3>Enabled</h3>
+    <input class="input" type="tel" placeholder="Placeholder..." value="012345">
     <input class="input" type="tel" placeholder="Placeholder...">
+
+    <div class="spacer"></div>
+
+    <h3>Disabled</h3>
+    <input class="input" type="tel" placeholder="Placeholder..." value="012345" disabled>
     <input class="input" type="tel" placeholder="Placeholder..." disabled>
+
+    <div class="spacer"></div>
+
+    <h3>Readonly</h3>
+    <input class="input" type="tel" placeholder="Placeholder..." value="012345" readonly>
     <input class="input" type="tel" placeholder="Placeholder..." readonly>
 </div>
 
-<h2 class="h2">Text</h2>
+<h2>Text</h2>
 <div class="spacer">
+    <h3>Enabled</h3>
+    <input class="input" type="text" placeholder="Placeholder..." value="Example">
     <input class="input" type="text" placeholder="Placeholder...">
+
+    <div class="spacer"></div>
+
+    <h3>Disabled</h3>
+    <input class="input" type="text" placeholder="Placeholder..." value="Example" disabled>
     <input class="input" type="text" placeholder="Placeholder..." disabled>
+
+    <div class="spacer"></div>
+
+    <h3>Readonly</h3>
+    <input class="input" type="text" placeholder="Placeholder..." value="Example" readonly>
     <input class="input" type="text" placeholder="Placeholder..." readonly>
 </div>
 
-<h2 class="h2">URL</h2>
+<h2>URL</h2>
 <div class="spacer">
+    <h3>Enabled</h3>
+    <input class="input" type="url" placeholder="Placeholder..." value="https://www.example.org">
     <input class="input" type="url" placeholder="Placeholder...">
+    <input class="input" type="url" placeholder="Placeholder..." value="Invalid">
+
+    <div class="spacer"></div>
+
+    <h3>Disabled</h3>
+    <input class="input" type="url" placeholder="Placeholder..." value="https://www.example.org" disabled>
     <input class="input" type="url" placeholder="Placeholder..." disabled>
+    <input class="input" type="url" placeholder="Placeholder..." value="Invalid" disabled>
+
+    <div class="spacer"></div>
+
+    <h3>Readonly</h3>
+    <input class="input" type="url" placeholder="Placeholder..." value="https://www.example.org" readonly>
     <input class="input" type="url" placeholder="Placeholder..." readonly>
+    <input class="input" type="url" placeholder="Placeholder..." value="Invalid" readonly>
 </div>
 
-<h1 class="h1">Selects</h1>
+<h1>Progress</h1>
+<div class="spacer">
+    <progress class="progress" value="70" max="100"></progress>
+</div>
+
+<h1>Selects</h1>
 <div class="spacer">
     <select class="select">
         <option>Value 1</option>
@@ -141,22 +290,22 @@ body {
     </select>
 </div>
 
-<h1 class="h1">Textarea</h1>
+<h1>Textarea</h1>
 <textarea class="textarea" cols="30" rows="10">
-    I am
-    a
-    multiline
-    textarea
+I am
+a
+multiline
+textarea
 </textarea>
 <textarea class="textarea" cols="30" rows="10" disabled>
-    I am
-    a disabled
-    multiline
-    textarea
+I am
+a disabled
+multiline
+textarea
 </textarea>
 <textarea class="textarea" cols="30" rows="10" readonly>
-    I am
-    a readonly
-    multiline
-    textarea
+I am
+a readonly
+multiline
+textarea
 </textarea>
