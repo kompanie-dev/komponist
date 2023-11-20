@@ -18,15 +18,17 @@ It contains styles for the following elements:
     * `tel`
     * `text`
     * `url`
+* `<label>`
+* `<progress>`
 * `<select> (+ <option>)`
 * `<textarea>`
 
-To use the styling in your project just apply the correct CSS class (`.anchor`, `.button`, `.h1`-`.h6`, `.input`, `.select`, `.textarea`) to the element.
+To use the styling in your project just apply the correct CSS class (`.a`, `.button`, `.h1`-`.h6`, `.input`, `.label`, `.progress`, `.select`, `.textarea`) to the element.
 The library also resets `margin`, `padding`, `box-sizing` and font for all elements and applies a `background` and `color` to the `body` element.
 
 You can take a look at demo/index.html to see how elements get styled.
 You need to supply CSS variables for the framework to function.
-You can see example values for a dark and light mode theme in demo/variables.css.
+There is a default dark and light theme in `source/_variables.css`.
 
 ## Usage
 
@@ -41,3 +43,5 @@ After the installation you can include the CSS in your app.
 Execute `npm install` and then use `npm start` to run the demo project.
 
 The site will be available at [localhost:8000](http://localhost:8000).
+
+To create a minified build of the library you can use `npm run build`.
