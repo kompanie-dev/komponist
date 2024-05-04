@@ -10,6 +10,11 @@
 	--input-invalid-color: #a00;
 	--text-color: #ccc;
 
+	--dialog-backdrop-color: rgba(0, 0, 0, .7);
+	--dialog-content-background: #000;
+	--dialog-headline-background: #333;
+	--dialog-padding: 8px 10px;
+
 	--element-background: #333;
 	--element-background-disabled: #555;
 	--element-border-color: #333;
@@ -26,6 +31,10 @@
 		--button-group-active-background: #ddd;
 		--input-invalid-color: #c00;
 		--text-color: #333;
+
+		--dialog-backdrop-color: rgba(.7, .7, .7, .7);
+		--dialog-content-background: #fff;
+		--dialog-headline-background: #bbb;
 
 		--element-background: #bbb;
 		--element-background-disabled: #ddd;

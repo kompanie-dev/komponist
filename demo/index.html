@@ -291,21 +291,39 @@ body {
 </div>
 
 <h1>Textarea</h1>
-<textarea class="textarea" cols="30" rows="10">
+<div class="spacer">
+    <textarea class="textarea" cols="30" rows="10">
 I am
 a
 multiline
 textarea
-</textarea>
-<textarea class="textarea" cols="30" rows="10" disabled>
+    </textarea>
+    <textarea class="textarea" cols="30" rows="10" disabled>
 I am
 a disabled
 multiline
 textarea
-</textarea>
-<textarea class="textarea" cols="30" rows="10" readonly>
+    </textarea>
+    <textarea class="textarea" cols="30" rows="10" readonly>
 I am
 a readonly
 multiline
 textarea
-</textarea>
+    </textarea>
+</div>
+
+<h1>Dialog</h1>
+<div class="spacer">
+    <dialog open class="dialog">
+        <div class="dialog-headline">
+            Dialog Headline
+            <button class="dialog-close-button">✖</button>
+        </div>
+        <div class="dialog-content">
+            <div>
+                Dialog content example
+            </div>
+            <button class="button">OK</button>
+        </div>
+    </dialog>
+</div>

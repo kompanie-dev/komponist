@@ -4,6 +4,7 @@ Komponist is a dependency-free compact CSS framework for styling standard HTML e
 It contains styles for the following elements:
 * `<a>`
 * `<button>`
+* `<dialog>`
 * `<h1> - <h6>`
 * `<input>`
     * `checkbox`
