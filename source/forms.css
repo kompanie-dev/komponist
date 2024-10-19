@@ -40,6 +40,7 @@ a.button:hover,
 	border-color: var(--element-border-color-hovered);
 }
 
+.button:enabled,
 .input[type=checkbox]:enabled,
 .input[type=color]:enabled,
 .input[type=file]:enabled,
