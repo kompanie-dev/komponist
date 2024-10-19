@@ -1,0 +1,17 @@
+.input-group {
+    display: inline-block;
+    font-size: 0;
+
+    .button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left-color: var(--element-border-color-hovered);
+    }
+    .input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .input:hover {
+        border-right-color: var(--element-background) !important;
+    }
+}
