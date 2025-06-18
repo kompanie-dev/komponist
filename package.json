@@ -8,10 +8,12 @@
     "/index.css"
   ],
   "scripts": {
-    "build": "npx parcel build index.css --dist-dir build --no-cache",
+    "build": "esbuild --bundle index.css --outfile=build/komponist.css",
+    "build-minified": "esbuild --bundle  --minify index.css --outfile=build/komponist.minified.css",
     "start": "npx diener --port=8000 --livereload"
   },
   "devDependencies": {
-    "@kompanie/diener": "^1.0.4"
+    "@kompanie/diener": "^1.0.4",
+    "esbuild": "^0.25.5"
   }
 }
