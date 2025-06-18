@@ -1,24 +1,24 @@
 .button-group {
-	border: 1px solid var(--element-border-color);
-	border-radius: 1rem;
-	display: inline-flex;
-	overflow: hidden;
+    border: 1px solid var(--element-border-color);
+    border-radius: var(--element-border-radius);
+    display: inline-flex;
+    overflow: hidden;
 }
 .button-group:focus-within {
-	outline: 2px solid var(--element-focus-outline-color);
+    outline: var(--element-outline);
 }
 
 .button-group .button {
-	border: none;
-	border-radius: 0;
+    border: none;
+    border-radius: 0;
 }
 .button-group .button:focus {
-	outline: none;
-	text-decoration: underline;
+    outline: none;
+    text-decoration: underline;
 }
 .button-group .button.active,
 .button-group .button:enabled:hover {
-	background: var(--button-group-active-background);
-	border: none;
-	color: var(--element-text-color-hovered);
+    background: var(--element-background-active);
+    border: none;
+    color: var(--element-color-hovered);
 }

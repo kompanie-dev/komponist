@@ -55,6 +55,24 @@ body {
     </div>
 </div>
 
+<h1>Details</h1>
+<div class="spacer">
+  <details class="details">
+    <summary>Details A</summary>
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren.
+  </details>
+  <details class="details" open>
+    <summary>Details B</summary>
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren.
+  </details>
+</div>
+
 <h1>Headings</h1>
 <div class="spacer">
     <h1>Header 1</h1>
@@ -303,9 +321,29 @@ body {
         <button class="button" disabled>Button</button>
     </div>
     <div class="input-group">
-        <input class="input" type="text" placeholder="Placeholder..." readonly>
+    <input class="input" type="text" placeholder="Placeholder..." readonly>
         <button class="button" disabled>Button</button>
     </div>
+</div>
+
+<h1>Nav</h1>
+<div class="spacer">
+  <nav class="nav">
+    <ul>
+      <li><button>File</button></li>
+      <li>
+        <button>Edit</button>
+
+        <!--TODO submenus-->
+        <ul style="display: none">
+          <li><button>Copy</button></li>
+          <li><button>Cut</button></li>
+          <li><button>Paste</button></li>
+        </ul>
+      </li>
+      <li><button>Help</button></li>
+    </ul>
+  </nav>
 </div>
 
 <h1>Progress</h1>
@@ -357,9 +395,7 @@ textarea
             <button class="dialog-close-button">✖</button>
         </div>
         <div class="dialog-content">
-            <div>
-                Dialog content example
-            </div>
+      <div>Dialog content example</div>
             <button class="button">OK</button>
         </div>
     </dialog>

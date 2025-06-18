@@ -1,47 +1,59 @@
 :root {
-	--element-border-radius: 1rem;
-	--element-padding: 6px 9px;
-	--font-family: "-apple-system", "Segoe UI", Verdana, sans-serif;
-	--font-size: .9rem;
+    --font-family: "-apple-system", "Segoe UI", Verdana, sans-serif;
+    --font-size: .9rem;
 
-	--accent-color: #06f;
-	--body-background-color: #000;
-	--button-group-active-background: #888;
-	--input-invalid-color: #a00;
-	--text-color: #ccc;
+    --accent-color: #06f;
 
-	--dialog-backdrop-color: rgba(0, 0, 0, .7);
-	--dialog-content-background: #000;
-	--dialog-headline-background: #333;
-	--dialog-padding: 8px 10px;
+    --element-background: #333;
+    --element-background-active: #888;
+    --element-background-disabled: #555;
+    --element-border-color: #333;
+    --element-border-color-hovered: #888;
+    --element-border-radius: 1rem;
+    --element-color-disabled: #888;
+    --element-color-hovered: #000;
+    --element-invalid-color: #a00;
+    --element-outline: 2px solid #888;
+    --element-padding: 6px 9px;
 
-	--element-background: #333;
-	--element-background-disabled: #555;
-	--element-border-color: #333;
-	--element-border-color-hovered: #888;
-	--element-focus-outline-color: #888;
-	--element-text-color-disabled: #888;
-	--element-text-color-hovered: #000;
+    --body-background: #000;
+    --body-color: #ccc;
+
+    --details-border-color: #ccc;
+    --details-margin: 12px 0 0 0;
+    --details-padding: 0 0 3px 12px;
+    --details-summary-font-weight: 700;
+
+    --dialog-backdrop-background: rgba(0, 0, 0, 0.7);
+    --dialog-content-background: #000;
+    --dialog-headline-background: #333;
+    --dialog-headline-font-weight: 700;
+    --dialog-padding: 8px 10px;
+
+    --nav-button-padding: 6px 12px;
 }
 
 @media (prefers-color-scheme: light) {
-	:root {
-		--accent-color: #06f;
-		--body-background-color: #fff;
-		--button-group-active-background: #ddd;
-		--input-invalid-color: #c00;
-		--text-color: #333;
+    :root {
+        --accent-color: #06f;
 
-		--dialog-backdrop-color: rgba(.7, .7, .7, .7);
-		--dialog-content-background: #fff;
-		--dialog-headline-background: #bbb;
+        --element-background: #bbb;
+        --element-background-active: #ddd;
+        --element-background-disabled: #ddd;
+        --element-border-color: #bbb;
+        --element-border-color-hovered: #555;
+        --element-color-disabled: #999;
+        --element-color-hovered: #000;
+        --element-invalid-color: #c00;
+        --element-outline: 2px solid #555;
 
-		--element-background: #bbb;
-		--element-background-disabled: #ddd;
-		--element-border-color: #bbb;
-		--element-border-color-hovered: #555;
-		--element-focus-outline-color: #555;
-		--element-text-color-disabled: #999;
-		--element-text-color-hovered: #000;
-	}
+        --body-background: #fff;
+        --body-color: #333;
+
+        --details-border-color: #000;
+
+        --dialog-backdrop-background: rgba(0.7, 0.7, 0.7, 0.7);
+        --dialog-content-background: #fff;
+        --dialog-headline-background: #bbb;
+    }
 }

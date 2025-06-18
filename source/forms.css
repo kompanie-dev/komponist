@@ -20,14 +20,14 @@
 .textarea:read-only {
     background: var(--element-background-disabled);
     border-color: var(--element-background-disabled);
-    color: var(--element-text-color-disabled);
+    color: var(--element-color-disabled);
 }
 
 .button:focus,
 .input:focus,
 .select:focus,
 .textarea:focus {
-	outline: 2px solid var(--element-focus-outline-color);
+    outline: var(--element-outline);
 }
 
 a.button:hover,
@@ -53,8 +53,8 @@ a.button:hover,
 
 .input:invalid,
 .input.invalid {
-    border-color: var(--input-invalid-color);
-    box-shadow: inset 0 0 1px 1px var(--input-invalid-color);
+    border-color: var(--element-invalid-color);
+    box-shadow: inset 0 0 1px 1px var(--element-invalid-color);
 }
 
 .input[type=checkbox],

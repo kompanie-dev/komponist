@@ -1,0 +1,15 @@
+.details {
+    border-left: 1px solid var(--details-border-color);
+    margin: var(--details-margin);
+    padding: var(--details-padding);
+}
+
+.details summary {
+    cursor: pointer;
+    font-weight: var(--details-summary-font-weight);
+}
+
+.details summary:focus {
+    outline: none;
+    text-decoration: underline;
+}

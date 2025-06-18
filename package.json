@@ -1,17 +1,17 @@
 {
-        "name": "@kompanie/komponist",
-        "version": "3.1.0",
-        "license": "MIT",
-        "repository": "github:kompanie-dev/komponist",
-        "files": [
-                "/source",
-                "/index.css"
-        ],
-        "scripts": {
-                "build": "npx parcel build index.css --dist-dir build --no-cache",
-                "start": "npx parcel demo/index.html --dist-dir build --no-cache --port 8000"
-        },
-        "devDependencies": {
-                "parcel": "^2.12.0"
-        }
+  "name": "@kompanie/komponist",
+  "version": "4.0.0",
+  "license": "MIT",
+  "repository": "github:kompanie-dev/komponist",
+  "files": [
+    "/source",
+    "/index.css"
+  ],
+  "scripts": {
+    "build": "npx parcel build index.css --dist-dir build --no-cache",
+    "start": "npx diener --port=8000 --livereload"
+  },
+  "devDependencies": {
+    "@kompanie/diener": "^1.0.4"
+  }
 }

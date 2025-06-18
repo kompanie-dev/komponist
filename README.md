@@ -2,8 +2,10 @@
 
 Komponist is a dependency-free compact CSS framework for styling standard HTML elements.
 It contains styles for the following elements:
+
 * `<a>`
 * `<button>`
+* `<details>` + `<summary>`
 * `<dialog>`
 * `<h1> - <h6>`
 * `<input>`
@@ -20,11 +22,12 @@ It contains styles for the following elements:
     * `text`
     * `url`
 * `<label>`
+* `<nav>`
 * `<progress>`
 * `<select> (+ <option>)`
 * `<textarea>`
 
-To use the styling in your project just apply the correct CSS class (`.a`, `.button`, `.h1`-`.h6`, `.input`, `.label`, `.progress`, `.select`, `.textarea`) to the element.
+To use the styling in your project just apply the correct CSS class (`.a`, `.button`, `.details`. `.h1`-`.h6`, `.input`, `.label`, `.nav`, `.progress`, `.select`, `.textarea`) to the element.
 The library also resets `margin`, `padding`, `box-sizing` and font for all elements and applies a `background` and `color` to the `body` element.
 
 You can take a look at demo/index.html to see how elements get styled.
@@ -34,9 +37,11 @@ There is a default dark and light theme in `source/_variables.css`.
 ## Usage
 
 At first you need to install the package using the following command:
+
 ```
 npm i @kompanie/komponist
 ```
+
 After the installation you can include the CSS in your app.
 
 ## Getting Started

@@ -2,12 +2,12 @@
     background: var(--dialog-content-background);
     border: 1px solid var(--element-border-color);
     border-radius: var(--element-border-radius);
-    color: var(--text-color);
+    color: inherit;
     font-size: var(--font-size);
     overflow: hidden;
 }
 .dialog::backdrop {
-    background: var(--dialog-backdrop-color);
+    background: var(--dialog-backdrop-background);
 }
 
 .dialog-close-button {
@@ -26,6 +26,6 @@
     background: var(--dialog-headline-background);
     border-bottom: 1px solid var(--element-border-color);
     display: flex;
-    font-weight: 700;
+    font-weight: var(--dialog-headline-font-weight);
     padding: var(--dialog-padding);
 }
