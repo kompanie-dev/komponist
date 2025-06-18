@@ -1,4 +1,4 @@
-# Komponist
+# Komponist 🎹
 
 Komponist is a dependency-free compact CSS framework for styling standard HTML elements.
 It contains styles for the following elements:
