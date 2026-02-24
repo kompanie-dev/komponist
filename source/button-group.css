@@ -17,7 +17,7 @@
             text-decoration: underline;
         }
 
-        &:enabled:hover, .active {
+        &:enabled:hover, &.active {
             background: var(--element-background-active);
             border: none;
             color: var(--element-color-hovered);
