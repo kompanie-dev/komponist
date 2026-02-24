@@ -13,7 +13,7 @@
     "start": "npx diener --port=8000 --livereload"
   },
   "devDependencies": {
-    "@kompanie/diener": "^1.0.4",
-    "esbuild": "^0.25.5"
+    "@kompanie/diener": "^3.0.0",
+    "esbuild": "^0.27.3"
   }
 }
