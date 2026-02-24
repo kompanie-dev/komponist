@@ -1,10 +1,12 @@
 .a {
     color: var(--accent-color);
     font-size: var(--font-size);
-}
-.a:focus {
-    outline: var(--element-outline);
-}
-.a:hover {
-    text-decoration: none;
+
+    &:focus {
+        outline: var(--element-outline);
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
 }

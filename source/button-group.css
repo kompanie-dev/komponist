@@ -3,22 +3,24 @@
     border-radius: var(--element-border-radius);
     display: inline-flex;
     overflow: hidden;
-}
-.button-group:focus-within {
-    outline: var(--element-outline);
-}
 
-.button-group .button {
-    border: none;
-    border-radius: 0;
-}
-.button-group .button:focus {
-    outline: none;
-    text-decoration: underline;
-}
-.button-group .button.active,
-.button-group .button:enabled:hover {
-    background: var(--element-background-active);
-    border: none;
-    color: var(--element-color-hovered);
+    &:focus-within {
+        outline: var(--element-outline);
+    }
+
+    .button {
+        border: none;
+        border-radius: 0;
+
+        &:focus {
+            outline: none;
+            text-decoration: underline;
+        }
+
+        &:enabled:hover, .active {
+            background: var(--element-background-active);
+            border: none;
+            color: var(--element-color-hovered);
+        }
+    }
 }

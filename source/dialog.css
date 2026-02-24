@@ -5,9 +5,10 @@
     color: inherit;
     font-size: var(--font-size);
     overflow: hidden;
-}
-.dialog::backdrop {
-    background: var(--dialog-backdrop-background);
+
+    &::backdrop {
+        background: var(--dialog-backdrop-background);
+    }
 }
 
 .dialog-close-button {
