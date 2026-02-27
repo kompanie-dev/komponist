@@ -74,15 +74,12 @@ a.button:hover,
     height: 1.7rem;
 }
 .input[type=color]::-moz-color-swatch {
-	border: none;
-    border-radius: var(--element-border-radius);
+	height: 1.7rem;
+    margin: -20px;
+    width: 200%;
 }
 .input[type=color]::-webkit-color-swatch {
-	border: none;
-    border-radius: var(--element-border-radius);
-}
-.input[type=color]::-webkit-color-swatch-wrapper {
-	padding: 0;
+	margin: -15px;
 }
 
 .input[type=file]::file-selector-button {
