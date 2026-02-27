@@ -58,14 +58,16 @@ a.button:hover,
 .input[type=color] {
   height: 1.7rem;
   width: 3.5rem;
-}
-.input[type=color]::-moz-color-swatch {
-  height: 1.7rem;
-  margin: -20px;
-  width: 200%;
-}
-.input[type=color]::-webkit-color-swatch {
-  margin: -15px;
+
+  &::-moz-color-swatch {
+    height: 1.7rem;
+    margin: -20px;
+    width: 200%;
+  }
+
+  &::-webkit-color-swatch {
+    margin: -15px;
+  }
 }
 
 .input[type=file]::file-selector-button {
