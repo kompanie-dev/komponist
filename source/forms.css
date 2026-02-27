@@ -30,13 +30,7 @@ a.button:hover,
 }
 
 :is(.button, .select):enabled,
-.input:is(
-    [type=checkbox],
-    [type=color],
-    [type=file],
-    [type=radio],
-    [type=range]
-  ):enabled,
+.input:is([type=checkbox], [type=color], [type=file], [type=radio], [type=range]):enabled,
 .select option {
   cursor: pointer;
 }
