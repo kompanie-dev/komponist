@@ -5,11 +5,11 @@
         color: inherit;
         cursor: pointer;
         padding: var(--nav-button-padding);
-    }
 
-    button:hover {
-        background: var(--element-background-active);
-        color: var(--element-color-hovered);
+        &:hover {
+            background: var(--element-background-active);
+            color: var(--element-color-hovered);
+        }
     }
 
     ul {
