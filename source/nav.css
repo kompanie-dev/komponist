@@ -2,7 +2,7 @@
     button {
         background: var(--element-background);
         border: none;
-        color: inherit;
+        color: var(--element-color);
         cursor: pointer;
         padding: var(--nav-button-padding);
 

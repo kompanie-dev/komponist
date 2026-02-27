@@ -2,7 +2,7 @@
     background: var(--dialog-content-background);
     border: 1px solid var(--element-border-color);
     border-radius: var(--element-border-radius);
-    color: inherit;
+    color: var(--element-color);
     font-size: var(--font-size);
     overflow: hidden;
 
@@ -12,9 +12,9 @@
 }
 
 .dialog-close-button {
-    background: inherit;
+    background: var(--element-background);
     border: none;
-    color: inherit;
+    color: var(--element-color);
     cursor: pointer;
     margin-left: auto;
 }

@@ -3,6 +3,8 @@
     --font-size: .9rem;
 
     --accent-color: #06f;
+    
+    --body-background: #000;
 
     --element-background: #333;
     --element-background-active: #888;
@@ -10,14 +12,12 @@
     --element-border-color: #333;
     --element-border-color-hovered: #888;
     --element-border-radius: 1rem;
+    --element-color: #ccc;
     --element-color-disabled: #888;
     --element-color-hovered: #000;
     --element-color-invalid: #a00;
     --element-outline: 2px solid #888;
     --element-padding: 6px 9px;
-
-    --body-background: #000;
-    --body-color: #ccc;
 
     --details-border-color: #ccc;
     --details-margin: 12px 0 0 0;
@@ -37,18 +37,18 @@
     :root {
         --accent-color: #06f;
 
+        --body-background: #fff;
+
         --element-background: #bbb;
         --element-background-active: #ddd;
         --element-background-disabled: #ddd;
         --element-border-color: #bbb;
         --element-border-color-hovered: #555;
+        --element-color: #333;
         --element-color-disabled: #999;
         --element-color-hovered: #000;
         --element-color-invalid: #c00;
         --element-outline: 2px solid #555;
-
-        --body-background: #fff;
-        --body-color: #333;
 
         --details-border-color: #000;
 

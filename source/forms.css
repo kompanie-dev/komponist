@@ -6,7 +6,7 @@
     background: var(--element-background);
     border: 1px solid var(--element-border-color);
     border-radius: var(--element-border-radius);
-    color: var(--body-color);
+    color: var(--element-color);
     font-size: var(--font-size);
     padding: var(--element-padding);
     text-decoration: none;
