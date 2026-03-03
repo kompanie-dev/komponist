@@ -1,6 +1,11 @@
+.a, .body, .div, .label, .span {
+    background: var(--body-background);
+    color: var(--element-color);
+    font-size: var(--font-size);
+}
+
 .a {
     color: var(--accent-color);
-    font-size: var(--font-size);
 
     &:focus {
         outline: var(--element-outline);

@@ -12,8 +12,8 @@
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
 
-        &:hover {
-            border-right-color: var(--element-background) !important;
+        &:enabled:hover:read-write {
+            border-right-color: var(--element-background);
         }
     }
 }

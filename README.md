@@ -4,9 +4,11 @@ Komponist is a dependency-free compact CSS framework for styling standard HTML e
 It contains styles for the following elements:
 
 * `<a>`
+* `<body>`
 * `<button>`
 * `<details>` + `<summary>`
 * `<dialog>`
+* `<div>`
 * `<h1> - <h6>`
 * `<input>`
     * `checkbox`
@@ -25,6 +27,7 @@ It contains styles for the following elements:
 * `<nav>`
 * `<progress>`
 * `<select> (+ <option>)`
+* `<span>`
 * `<textarea>`
 
 To use the styling in your project just apply the correct CSS class (`.a`, `.button`, `.details`. `.h1`-`.h6`, `.input`, `.label`, `.nav`, `.progress`, `.select`, `.textarea`) to the element.
