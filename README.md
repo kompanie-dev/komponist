@@ -30,7 +30,7 @@ It contains styles for the following elements:
 * `<span>`
 * `<textarea>`
 
-To use the styling in your project just apply the correct CSS class (`.a`, `.button`, `.details`. `.h1`-`.h6`, `.input`, `.label`, `.nav`, `.progress`, `.select`, `.textarea`) to the element.
+To use the styling in your project just apply the correct CSS class (`.a`, `.body`, `.button`, `.details`, `.div`, `.h1`-`.h6`, `.input`, `.label`, `.nav`, `.progress`, `.select`, `.span`, `.textarea`) to the element.
 
 The library has a small, optional CSS reset class, which can be enabled by adding the `reset` class to elements.
 All elements inside this element will then get the CSS reset applied.
