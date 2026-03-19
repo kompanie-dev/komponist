@@ -1,5 +1,6 @@
 @import url(source/reset.css);
 
+@import url(source/elements/blockquote.css);
 @import url(source/elements/details.css);
 @import url(source/elements/dialog.css);
 @import url(source/elements/forms.css);
