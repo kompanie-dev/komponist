@@ -5,6 +5,7 @@
   "repository": "github:kompanie-dev/komponist",
   "files": [
     "/source",
+    "/themes",
     "/index.css"
   ],
   "scripts": {
