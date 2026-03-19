@@ -1,6 +1,7 @@
 @import url(source/reset.css);
 
 @import url(source/elements/blockquote.css);
+@import url(source/elements/content.css);
 @import url(source/elements/details.css);
 @import url(source/elements/dialog.css);
 @import url(source/elements/forms.css);
@@ -9,7 +10,6 @@
 @import url(source/elements/nav.css);
 @import url(source/elements/progress.css);
 @import url(source/elements/table.css);
-@import url(source/elements/text.css);
 
 @import url(source/groups/button-group.css);
 @import url(source/groups/input-group.css);
