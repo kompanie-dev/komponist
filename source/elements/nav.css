@@ -1,4 +1,4 @@
-.nav {
+.nav {    
     button {
         background: var(--element-background);
         border: none;
@@ -8,6 +8,7 @@
 
         &:hover {
             background: var(--element-background-active);
+            border-radius: var(--element-border-radius);
             color: var(--element-color-hovered);
         }
     }
@@ -16,5 +17,6 @@
         background: var(--element-background);
         display: flex;
         list-style: none;
+        padding: 0;
     }
 }
