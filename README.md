@@ -6,7 +6,7 @@ It contains styles for the following elements:
 * `<a>`
 * `<body>`
 * `<button>`
-* `<details>` + `<summary>`
+* `<details> + <summary>`
 * `<dialog>`
 * `<div>`
 * `<h1> - <h6>`
@@ -28,6 +28,7 @@ It contains styles for the following elements:
 * `<progress>`
 * `<select> (+ <option>)`
 * `<span>`
+* `<table> (+ <td>, <th>)`
 * `<textarea>`
 
 To use the styling in your project just apply the correct CSS class (`.a`, `.body`, `.button`, `.details`, `.div`, `.h1`-`.h6`, `.input`, `.label`, `.nav`, `.progress`, `.select`, `.span`, `.textarea`) to the element.

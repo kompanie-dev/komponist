@@ -1,0 +1,10 @@
+.table {
+    border-collapse: collapse;
+
+    td, th {
+        border: none;
+        border-bottom: 1px solid var(--element-border-color);
+        padding: 0.5rem;
+        text-align: left;
+    }
+}
