@@ -1,5 +1,3 @@
-@import url(source/reset.css);
-
 @import url(source/components/alert.css);
 @import url(source/components/badge.css);
 @import url(source/components/spinner.css);
@@ -10,6 +8,7 @@
 @import url(source/elements/details.css);
 @import url(source/elements/dialog.css);
 @import url(source/elements/forms.css);
+@import url(source/elements/headers.css);
 @import url(source/elements/hr.css);
 @import url(source/elements/img.css);
 @import url(source/elements/nav.css);
