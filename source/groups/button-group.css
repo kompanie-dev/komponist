@@ -11,16 +11,17 @@
     .button {
         border: none;
         border-radius: 0;
-
-        &:focus {
-            outline: none;
-            text-decoration: underline;
-        }
+        margin-top: 0;
 
         &:enabled:hover, &.active {
             background: var(--element-background-active);
             border: none;
             color: var(--element-color-hovered);
+        }
+
+        &:focus {
+            outline: none;
+            text-decoration: underline;
         }
     }
 }
