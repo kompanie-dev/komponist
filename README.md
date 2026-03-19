@@ -10,6 +10,7 @@ It contains styles for the following elements:
 * `<dialog>`
 * `<div>`
 * `<h1> - <h6>`
+* `<hr>`
 * `<input>`
     * `checkbox`
     * `color`
