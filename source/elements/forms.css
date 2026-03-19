@@ -3,16 +3,22 @@
   border: 1px solid var(--element-border-color);
   border-radius: var(--element-border-radius);
   color: var(--element-color);
+  font-family: var(--font-family);
   font-size: var(--font-size);
+  margin-top: 1px;
   padding: var(--element-padding);
   text-decoration: none;
 }
 
 :is(.button, .input, .select, .textarea):disabled,
-.input:read-only:not([type=color]):not([type=file]),
+.input:read-only:not([type=color]):not([type=file]):not([type=reset]):not([type=submit]),
 .textarea:read-only {
   background: var(--element-background-disabled);
   border-color: var(--element-background-disabled);
+  color: var(--element-color-disabled);
+}
+
+label:has(.input:disabled) {
   color: var(--element-color-disabled);
 }
 
@@ -23,14 +29,14 @@
 a.button:hover,
 .button:enabled:hover,
 .input:enabled:hover:read-write,
-.input:is([type=color], [type=file]):enabled:hover,
+.input:is([type=color], [type=file], [type=reset], [type=submit]):enabled:hover,
 .select:enabled:hover,
 .textarea:enabled:hover:read-write {
   border-color: var(--element-border-color-hovered);
 }
 
 :is(.button, .select):enabled,
-.input:is([type=checkbox], [type=color], [type=file], [type=radio], [type=range]):enabled,
+.input:is([type=checkbox], [type=color], [type=file], [type=radio], [type=range], [type=reset], [type=submit]):enabled,
 .select option {
   cursor: pointer;
 }
@@ -68,4 +74,16 @@ a.button:hover,
   border: none;
   border-right: 1px solid;
   color: inherit;
+}
+
+.input[type=number]:enabled:read-write {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    opacity: 1;
+  }
+}
+
+.input[type=number]:disabled,
+.input[type=number]:enabled:read-only {
+  -moz-appearance: textfield;
 }
