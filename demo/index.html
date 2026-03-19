@@ -2,435 +2,622 @@
 <title>Komponist Demo</title>
 <link rel="stylesheet" href="../themes/default/auto.css">
 <link rel="stylesheet" href="../index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-.spacer {
-    margin-bottom: 20px;
-    margin-top: 5px;
-}
-body {
-    padding-left: 15px;
-}
+    .spacer {
+        margin: 20px 0
+    }
+
+    body {
+        padding-left: 15px;
+    }
 </style>
 
 <body class="body reset">
-    <h1>Anchors</h1>
+    <h1 class="h1">Komponist Overview</h1>
+    
     <div class="spacer">
-        <a class="a" href="#">Normal link</a>
-        <a href="#" class="button">Button Link</a>
-    </div>
+        <h2 class="h2">Components</h2>
 
-    <h1>Buttons</h1>
-    <h2>Buttons</h2>
-    <div class="spacer">
-        <button class="button">Enabled</button>
-        <button class="button" disabled>Disabled</button>
-    </div>
+        <div class="spacer">
+            <h3 class="h3">Alerts</h3>
 
-    <h2>Button Group</h2>
-    <div class="spacer">
-        <div class="button-group">
-            <button class="button">ABC</button>
-            <button class="button">DEF</button>
-            <button class="button">XYZ</button>
-        </div>
-    </div>
-    <div class="spacer">
-        <div class="button-group">
-            <button class="button active">ABC</button>
-            <button class="button">DEF</button>
-            <button class="button">XYZ</button>
-        </div>
-    </div>
-    <div class="spacer">
-        <div class="button-group">
-            <button class="button">ABC</button>
-            <button class="button active">DEF</button>
-            <button class="button">XYZ</button>
-        </div>
-    </div>
-    <div class="spacer">
-        <div class="button-group">
-            <button class="button">ABC</button>
-            <button class="button">DEF</button>
-            <button class="button active">XYZ</button>
-        </div>
-    </div>
-
-    <h1>Details</h1>
-    <div class="spacer">
-    <details class="details">
-        <summary>Details A</summary>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren.
-    </details>
-    <details class="details" open>
-        <summary>Details B</summary>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren.
-    </details>
-    </div>
-
-    <h1>Headings</h1>
-    <div class="spacer">
-        <h1>Header 1</h1>
-        <h2>Header 2</h2>
-        <h3>Header 3</h3>
-        <h4>Header 4</h4>
-        <h5>Header 5</h5>
-        <h6>Header 6</h6>
-    </div>
-
-    <div class="spacer" style="width: 500px">
-        <h1>Horizontal Rule</h1>
-
-        <hr class="hr">
-    </div>
-
-    <h1>Inputs</h1>
-
-    <h2>Checkbox</h2>
-    <div class="spacer">
-        <div>
-            <label class="label">
-                <input class="input" type="checkbox" checked>
-                Checkbox enabled and checked
-            </label>
-        </div>
-
-        <div>
-            <label class="label">
-                <input class="input" type="checkbox">
-                Checkbox enabled and unchecked
-            </label>
-        </div>
-
-        <div>
-            <label class="label">
-                <input class="input" type="checkbox" checked disabled>
-                Checkbox disabled and checked
-            </label>
-        </div>
-
-        <div>
-            <label class="label">
-                <input class="input" type="checkbox" disabled>
-                Checkbox disabled and unchecked
-            </label>
-        </div>
-    </div>
-
-    <h2>Color</h2>
-    <div class="spacer">
-        <input class="input" type="color" value="#007700">
-        <input class="input" type="color" value="#007700" disabled>
-    </div>
-
-    <h2>Date</h2>
-    <div class="spacer">
-        <input class="input" type="date">
-        <input class="input" type="date" disabled>
-        <input class="input" type="date" readonly>
-    </div>
-
-    <h2>E-Mail</h2>
-    <div class="spacer">
-        <h3>Enabled</h3>
-        <input class="input" type="email" placeholder="Placeholder..." value="test@example.com">
-        <input class="input" type="email" placeholder="Placeholder...">
-
-        <div class="spacer"></div>
-
-        <h3>Disabled</h3>
-        <input class="input" type="email" placeholder="Placeholder..." value="test@example.com" disabled>
-        <input class="input" type="email" placeholder="Placeholder..." disabled>
-
-        <div class="spacer"></div>
-
-        <h3>Readonly</h3>
-        <input class="input" type="email" placeholder="Placeholder..." value="test@example.com" readonly>
-        <input class="input" type="email" placeholder="Placeholder..." readonly>
-    </div>
-
-    <h2>File</h2>
-    <div class="spacer">
-        <input class="input" type="file">
-        <input class="input" type="file" disabled>
-    </div>
-
-    <h2>Number</h2>
-    <div class="spacer">
-        <h3>Enabled</h3>
-        <input class="input" type="number" value="0">
-        <input class="input" type="number" placeholder="Placeholder...">
-
-        <div class="spacer"></div>
-
-        <h3>Disabled</h3>
-        <input class="input" type="number" value="0" disabled>
-        <input class="input" type="number" placeholder="Placeholder..." disabled>
-
-        <div class="spacer"></div>
-
-        <h3>Readonly</h3>
-        <input class="input" type="number" value="0" readonly>
-        <input class="input" type="number" placeholder="Placeholder..." readonly>
-    </div>
-
-    <h2>Password</h2>
-    <div class="spacer">
-        <h3>Enabled</h3>
-        <input class="input" type="password" placeholder="Placeholder..." value="1234">
-        <input class="input" type="password" placeholder="Placeholder...">
-
-        <div class="spacer"></div>
-
-        <h3>Disabled</h3>
-        <input class="input" type="password" placeholder="Placeholder..." value="1234" disabled>
-        <input class="input" type="password" placeholder="Placeholder..." disabled>
-
-        <div class="spacer"></div>
-
-        <h3>Readonly</h3>
-        <input class="input" type="password" placeholder="Placeholder..." value="1234" readonly>
-        <input class="input" type="password" placeholder="Placeholder..." readonly>
-    </div>
-
-    <h2>Radio</h2>
-    <div class="spacer">
-        <div>
-            <label class="label">
-                <input class="input" type="radio" id="radio1" name="radio-group" checked>
-                Radio enabled and checked
-            </label>
-        </div>
-
-        <div>
-            <label class="label">
-                <input class="input" type="radio" id="radio2" name="radio-group">
-                Radio enabled and unchecked
-            </label>
-        </div>
-
-        <div>
-            <label class="label">
-                <input class="input" type="radio" id="radio3" name="radio-group-disabled" disabled checked>
-                Radio disabled and checked
-            </label>
-        </div>
-
-        <div>
-            <label class="label">
-                <input class="input" type="radio" id="radio3" name="radio-group-disabled" disabled>
-                Radio disabled and unchecked
-            </label>
-        </div>
-    </div>
-
-    <h2>Range</h2>
-    <div class="spacer">
-        <input class="input" type="range">
-        <input class="input" type="range" disabled>
-    </div>
-
-    <h2>Tel</h2>
-    <div class="spacer">
-        <h3>Enabled</h3>
-        <input class="input" type="tel" placeholder="Placeholder..." value="012345">
-        <input class="input" type="tel" placeholder="Placeholder...">
-
-        <div class="spacer"></div>
-
-        <h3>Disabled</h3>
-        <input class="input" type="tel" placeholder="Placeholder..." value="012345" disabled>
-        <input class="input" type="tel" placeholder="Placeholder..." disabled>
-
-        <div class="spacer"></div>
-
-        <h3>Readonly</h3>
-        <input class="input" type="tel" placeholder="Placeholder..." value="012345" readonly>
-        <input class="input" type="tel" placeholder="Placeholder..." readonly>
-    </div>
-
-    <h2>Text</h2>
-    <div class="spacer">
-        <h3>Enabled</h3>
-        <input class="input" type="text" placeholder="Placeholder..." value="Example">
-        <input class="input" type="text" placeholder="Placeholder...">
-
-        <div class="spacer"></div>
-
-        <h3>Disabled</h3>
-        <input class="input" type="text" placeholder="Placeholder..." value="Example" disabled>
-        <input class="input" type="text" placeholder="Placeholder..." disabled>
-
-        <div class="spacer"></div>
-
-        <h3>Readonly</h3>
-        <input class="input" type="text" placeholder="Placeholder..." value="Example" readonly>
-        <input class="input" type="text" placeholder="Placeholder..." readonly>
-    </div>
-
-    <h2>URL</h2>
-    <div class="spacer">
-        <h3>Enabled</h3>
-        <input class="input" type="url" placeholder="Placeholder..." value="https://www.example.org">
-        <input class="input" type="url" placeholder="Placeholder...">
-        <input class="input" type="url" placeholder="Placeholder..." value="Invalid">
-
-        <div class="spacer"></div>
-
-        <h3>Disabled</h3>
-        <input class="input" type="url" placeholder="Placeholder..." value="https://www.example.org" disabled>
-        <input class="input" type="url" placeholder="Placeholder..." disabled>
-        <input class="input" type="url" placeholder="Placeholder..." value="Invalid" disabled>
-
-        <div class="spacer"></div>
-
-        <h3>Readonly</h3>
-        <input class="input" type="url" placeholder="Placeholder..." value="https://www.example.org" readonly>
-        <input class="input" type="url" placeholder="Placeholder..." readonly>
-        <input class="input" type="url" placeholder="Placeholder..." value="Invalid" readonly>
-    </div>
-
-    <h2>Input Group</h2>
-    <div class="spacer">
-        <h3>Enabled</h3>
-        <div class="input-group">
-            <input class="input" type="text" placeholder="Placeholder..." value="Example">
-            <button class="button">Button</button>
-        </div>
-        <div class="input-group">
-            <input class="input" type="text" placeholder="Placeholder...">
-            <button class="button">Button</button>
-        </div>
-
-        <div class="spacer"></div>
-
-        <h3>Disabled</h3>
-        <div class="input-group">
-            <input class="input" type="text" placeholder="Placeholder..." value="Example" disabled>
-            <button class="button" disabled>Button</button>
-        </div>
-        <div class="input-group">
-            <input class="input" type="text" placeholder="Placeholder..." disabled>
-            <button class="button" disabled>Button</button>
-        </div>
-
-        <div class="spacer"></div>
-
-        <h3>Readonly</h3>
-        <div class="input-group">
-            <input class="input" type="text" placeholder="Placeholder..." value="Example" readonly>
-            <button class="button" disabled>Button</button>
-        </div>
-        <div class="input-group">
-        <input class="input" type="text" placeholder="Placeholder..." readonly>
-            <button class="button" disabled>Button</button>
-        </div>
-    </div>
-
-    <h1>Nav</h1>
-    <div class="spacer">
-    <nav class="nav">
-        <ul>
-        <li><button>File</button></li>
-        <li>
-            <button>Edit</button>
-
-            <!--TODO submenus-->
-            <ul style="display: none">
-            <li><button>Copy</button></li>
-            <li><button>Cut</button></li>
-            <li><button>Paste</button></li>
-            </ul>
-        </li>
-        <li><button>Help</button></li>
-        </ul>
-    </nav>
-    </div>
-
-    <h1>Progress</h1>
-    <div class="spacer">
-        <progress class="progress" value="70" max="100"></progress>
-    </div>
-
-    <h1>Selects</h1>
-    <div class="spacer">
-        <select class="select">
-            <option>Value 1</option>
-            <option>Value 2</option>
-            <option>Value 3</option>
-        </select>
-        <select class="select" disabled>
-            <option>Value 1</option>
-            <option>Value 2</option>
-            <option>Value 3</option>
-        </select>
-    </div>
-
-    <div class="spacer">
-        <h1>Table</h1>
-
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Header 1</th>
-                    <th>Header 2</th>
-                    <th>Header 3</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Row 1, Cell 1</td>
-                    <td>Row 1, Cell 2</td>
-                    <td>Row 1, Cell 3</td>
-                </tr>
-                <tr>
-                    <td>Row 2, Cell 1</td>
-                    <td>Row 2, Cell 2</td>
-                    <td>Row 2, Cell 3</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <h1>Textarea</h1>
-    <div class="spacer">
-        <textarea class="textarea" cols="30" rows="10">
-    I am
-    a
-    multiline
-    textarea
-        </textarea>
-        <textarea class="textarea" cols="30" rows="10" disabled>
-    I am
-    a disabled
-    multiline
-    textarea
-        </textarea>
-        <textarea class="textarea" cols="30" rows="10" readonly>
-    I am
-    a readonly
-    multiline
-    textarea
-        </textarea>
-    </div>
-
-    <h1>Dialog</h1>
-    <div class="spacer">
-        <dialog open class="dialog">
-            <div class="dialog-header">
-                Dialog Header
-                <button class="dialog-close-button">✖</button>
+            <div class="alert">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quod cum libero laboriosam. Placeat ea dolorem, officiis in omnis delectus! Eius vitae fuga laboriosam velit dicta deserunt repudiandae sapiente aliquam!
             </div>
-            <div class="dialog-content">
-                <div>Dialog content example</div>
-                <button class="button">OK</button>
+            <div class="alert info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quod cum libero laboriosam. Placeat ea dolorem, officiis in omnis delectus! Eius vitae fuga laboriosam velit dicta deserunt repudiandae sapiente aliquam!
             </div>
-        </dialog>
+            <div class="alert error">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quod cum libero laboriosam. Placeat ea dolorem, officiis in omnis delectus! Eius vitae fuga laboriosam velit dicta deserunt repudiandae sapiente aliquam!
+            </div>
+            <div class="alert success">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quod cum libero laboriosam. Placeat ea dolorem, officiis in omnis delectus! Eius vitae fuga laboriosam velit dicta deserunt repudiandae sapiente aliquam!
+            </div>
+            <div class="alert warning">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quod cum libero laboriosam. Placeat ea dolorem, officiis in omnis delectus! Eius vitae fuga laboriosam velit dicta deserunt repudiandae sapiente aliquam!
+            </div>
+        </div>
+
+        <div class="spacer">
+            <h3 class="h3">Badges</h3>
+
+            <div>
+                <span class="badge">Default</span>
+                <span class="badge info">Info</span>
+                <span class="badge error">Error</span>
+                <span class="badge success">Success</span>
+                <span class="badge warning">Warning</span>
+            </div>
+        </div>
+
+        <div class="spacer">
+            <h3 class="h3">Spinner</h3>
+
+            <div style="height: 100px; width: 100px">
+                <div class="spinner"></div>
+            </div>
+        </div>
+
+        <div class="spacer">
+            <h3 class="h3">Tabs</h3>
+
+            <div class="tabs">
+                <button class="tab active">Tab 1</button>
+                <button class="tab">Tab 2</button>
+                <button class="tab">Tab 3</button>
+            </div>
+        </div>
     </div>
+
+    <hr class="hr">
+
+    <div class="spacer">
+        <h2 class="h2">Elements</h2>
+
+        <div class="spacer">
+            <h3 class="h3">Abbreviation</h3>
+
+            <abbr title="World Health Organization">WHO</abbr>
+        </div>
+
+        <div class="spacer">
+            <h3 class="h3">Anchors</h3>
+
+            <a class="a" href="#">Normal link</a>
+            <a href="#" class="button">Button Link</a>
+        </div>
+
+        <div class="spacer">
+            <h3 class="h3">Blockquote</h3>
+
+            <blockquote class="blockquote">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren.
+            </blockquote>
+        </div>
+
+        <div class="spacer">
+            <h3 class="h3">Buttons</h3>
+
+            <button class="button">Enabled</button>
+            <button class="button" disabled>Disabled</button>
+        </div>
+
+        <div class="spacer">
+            <h3 class="h3">Details</h3>
+
+            <details class="details">
+                <summary>Details A</summary>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren.
+            </details>
+            <details class="details" open>
+                <summary>Details B</summary>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren.
+            </details>
+        </div>
+
+        <div class="spacer" style="height: 200px;">
+            <h3 class="h3">Dialog</h3>
+
+            <dialog open class="dialog">
+                <div class="dialog-header">
+                    Dialog Headline
+                    <button class="dialog-close-button">✖</button>
+                </div>
+                <div class="dialog-content">
+                    <div>Dialog content example</div>
+                    <button class="button">OK</button>
+                </div>
+            </dialog>
+        </div>
+
+        <div class="spacer">
+            <h2 class="h2">Headings</h2>
+            <h1 class="h1">Header 1</h1>
+            <h2 class="h2">Header 2</h2>
+            <h3 class="h3">Header 3</h3>
+            <h4 class="h4">Header 4</h4>
+            <h5 class="h5">Header 5</h5>
+            <h6 class="h6">Header 6</h6>
+        </div>
+
+        <div class="spacer" style="width: 500px">
+            <h3 class="h3">Horizontal Rule</h3>
+
+            <hr class="hr">
+        </div>
+
+        <div class="spacer" style="max-width: 500px">
+            <h3 class="h3">Images</h3>
+
+            <img class="img" src="./example.jpg" alt="A beautiful AI-generated landscape">
+        </div>
+
+        <div class="spacer">
+            <h3 class="h3">Inputs</h3>
+
+            <div class="spacer">
+                <h4 class="h4">Checkbox</h4>
+
+                <div>
+                    <label class="label">
+                        <input class="input" type="checkbox" checked>
+                        Checkbox enabled and checked
+                    </label>
+                </div>
+
+                <div>
+                    <label class="label">
+                        <input class="input" type="checkbox" id="indeterminate-enabled">
+                        Checkbox indeterminate and unchecked
+                    </label>
+                    <script>
+                        document.getElementById("indeterminate-enabled").indeterminate = true;
+                    </script>
+                </div>
+
+                <div>
+                    <label class="label">
+                        <input class="input" type="checkbox">
+                        Checkbox enabled and unchecked
+                    </label>
+                </div>
+
+                <div>
+                    <label class="label">
+                        <input class="input" type="checkbox" checked disabled>
+                        Checkbox disabled and checked
+                    </label>
+                </div>
+
+                <div>
+                    <label class="label">
+                        <input class="input" type="checkbox" disabled id="indeterminate-disabled">
+                        Checkbox indeterminate and disabled
+                    </label>
+                    <script>
+                        document.getElementById("indeterminate-disabled").indeterminate = true;
+                    </script>
+                </div>
+
+                <div>
+                    <label class="label">
+                        <input class="input" type="checkbox" disabled>
+                        Checkbox disabled and unchecked
+                    </label>
+                </div>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">Color</h4>
+
+                <input class="input" type="color" value="#007700">
+                <input class="input" type="color" value="#007700" disabled>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">Date</h4>
+
+                <input class="input" type="date">
+                <input class="input" type="date" disabled>
+                <input class="input" type="date" readonly>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">E-Mail</h4>
+
+                <div class="spacer">
+                    <h5 class="h5">Enabled</h5>
+
+                    <input class="input" type="email" placeholder="Placeholder..." value="test@example.com">
+                    <input class="input" type="email" placeholder="Placeholder...">
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Disabled</h5>
+
+                    <input class="input" type="email" placeholder="Placeholder..." value="test@example.com" disabled>
+                    <input class="input" type="email" placeholder="Placeholder..." disabled>
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Readonly</h5>
+
+                    <input class="input" type="email" placeholder="Placeholder..." value="test@example.com" readonly>
+                    <input class="input" type="email" placeholder="Placeholder..." readonly>
+                </div>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">File</h4>
+
+                <input class="input" type="file">
+                <input class="input" type="file" disabled>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">Number</h4>
+
+                <div class="spacer">
+                    <h5 class="h5">Enabled</h5>
+
+                    <input class="input" type="number" value="0">
+                    <input class="input" type="number" placeholder="Placeholder...">
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Disabled</h5>
+
+                    <input class="input" type="number" value="0" disabled>
+                    <input class="input" type="number" placeholder="Placeholder..." disabled>
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Readonly</h5>
+
+                    <input class="input" type="number" value="0" readonly>
+                    <input class="input" type="number" placeholder="Placeholder..." readonly>
+                </div>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">Password</h4>
+
+                <div class="spacer">
+                    <h5 class="h5">Enabled</h5>
+
+                    <input class="input" type="password" placeholder="Placeholder..." value="1234">
+                    <input class="input" type="password" placeholder="Placeholder...">
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Disabled</h5>
+
+                    <input class="input" type="password" placeholder="Placeholder..." value="1234" disabled>
+                    <input class="input" type="password" placeholder="Placeholder..." disabled>
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Readonly</h5>
+
+                    <input class="input" type="password" placeholder="Placeholder..." value="1234" readonly>
+                    <input class="input" type="password" placeholder="Placeholder..." readonly>
+                </div>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">Radio</h4>
+
+                <div>
+                    <label class="label">
+                        <input class="input" type="radio" id="radio1" name="radio-group" checked>
+                        Radio enabled and checked
+                    </label>
+                </div>
+
+                <div>
+                    <label class="label">
+                        <input class="input" type="radio" id="radio2" name="radio-group">
+                        Radio enabled and unchecked
+                    </label>
+                </div>
+
+                <div>
+                    <label class="label">
+                        <input class="input" type="radio" id="radio3" name="radio-group-disabled" disabled checked>
+                        Radio disabled and checked
+                    </label>
+                </div>
+
+                <div>
+                    <label class="label">
+                        <input class="input" type="radio" id="radio3" name="radio-group-disabled" disabled>
+                        Radio disabled and unchecked
+                    </label>
+                </div>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">Range</h4>
+
+                <input class="input" type="range">
+                <input class="input" type="range" disabled>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">Reset</h4>
+
+                <input class="input" type="reset" value="Reset">
+                <input class="input" type="reset" value="Reset" disabled>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">Submit</h4>
+
+                <input class="input" type="submit" value="Submit">
+                <input class="input" type="submit" value="Submit" disabled>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">Tel</h4>
+
+                <div class="spacer">
+                    <h5 class="h5">Enabled</h5>
+
+                    <input class="input" type="tel" placeholder="Placeholder..." value="012345">
+                    <input class="input" type="tel" placeholder="Placeholder...">
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Disabled</h5>
+
+                    <input class="input" type="tel" placeholder="Placeholder..." value="012345" disabled>
+                    <input class="input" type="tel" placeholder="Placeholder..." disabled>
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Readonly</h5>
+
+                    <input class="input" type="tel" placeholder="Placeholder..." value="012345" readonly>
+                    <input class="input" type="tel" placeholder="Placeholder..." readonly>
+                </div>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">Text</h4>
+
+                <div class="spacer">
+                    <h5 class="h5">Enabled</h5>
+
+                    <input class="input" type="text" placeholder="Placeholder..." value="Example">
+                    <input class="input" type="text" placeholder="Placeholder...">
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Disabled</h5>
+
+                    <input class="input" type="text" placeholder="Placeholder..." value="Example" disabled>
+                    <input class="input" type="text" placeholder="Placeholder..." disabled>
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Readonly</h5>
+
+                    <input class="input" type="text" placeholder="Placeholder..." value="Example" readonly>
+                    <input class="input" type="text" placeholder="Placeholder..." readonly>
+                </div>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">URL</h4>
+
+                <div class="spacer">
+                    <h5 class="h5">Enabled</h5>
+
+                    <input class="input" type="url" placeholder="Placeholder..." value="https://www.example.org">
+                    <input class="input" type="url" placeholder="Placeholder...">
+                    <input class="input" type="url" placeholder="Placeholder..." value="Invalid">
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Disabled</h5>
+
+                    <input class="input" type="url" placeholder="Placeholder..." value="https://www.example.org" disabled>
+                    <input class="input" type="url" placeholder="Placeholder..." disabled>
+                    <input class="input" type="url" placeholder="Placeholder..." value="Invalid" disabled>
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Readonly</h5>
+
+                    <input class="input" type="url" placeholder="Placeholder..." value="https://www.example.org" readonly>
+                    <input class="input" type="url" placeholder="Placeholder..." readonly>
+                    <input class="input" type="url" placeholder="Placeholder..." value="Invalid" readonly>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="spacer">
+            <h3 class="h3">Nav</h3>
+
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <button>File</button>
+                    </li>
+                    <li>
+                        <button>Edit</button>
+
+                        <!--TODO submenus-->
+                        <ul style="display: none">
+                            <li><button>Copy</button></li>
+                            <li><button>Cut</button></li>
+                            <li><button>Paste</button></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button>Help</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="spacer">
+            <h3 class="h3">Progress</h3>
+
+            <progress class="progress" value="70" max="100"></progress>
+        </div>
+
+        <div class="spacer">
+            <h3 class="h3">Selects</h3>
+
+            <select class="select">
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+            <select class="select" disabled>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+
+        <div class="spacer">
+            <h3 class="h3">Table</h3>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                        <td>Row 1, Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                        <td>Row 2, Cell 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="spacer">
+            <h3 class="h3">Textarea</h3>
+
+            <textarea class="textarea" cols="30" rows="10">
+        I am
+        a
+        multiline
+        textarea
+            </textarea>
+            <textarea class="textarea" cols="30" rows="10" disabled>
+        I am
+        a disabled
+        multiline
+        textarea
+            </textarea>
+            <textarea class="textarea" cols="30" rows="10" readonly>
+        I am
+        a readonly
+        multiline
+        textarea
+            </textarea>
+        </div>
+    </div>
+
+    <hr class="hr">
+
+    <div class="spacer">
+        <h2 class="h2">Groups</h2>
+
+        <div class="spacer">
+            <div class="spacer">
+                <h4 class="h4">Button Group</h4>
+
+                <div class="button-group">
+                    <button class="button">ABC</button>
+                    <button class="button">DEF</button>
+                    <button class="button">XYZ</button>
+                </div>
+                <div class="button-group">
+                    <button class="button active">ABC</button>
+                    <button class="button">DEF</button>
+                    <button class="button">XYZ</button>
+                </div>
+                <div class="button-group">
+                    <button class="button">ABC</button>
+                    <button class="button active">DEF</button>
+                    <button class="button">XYZ</button>
+                </div>
+                <div class="button-group">
+                    <button class="button">ABC</button>
+                    <button class="button">DEF</button>
+                    <button class="button active">XYZ</button>
+                </div>
+            </div>
+
+            <div class="spacer">
+                <h4 class="h4">Input Group</h4>
+
+                <div class="spacer">
+                    <h5 class="h5">Enabled</h5>
+
+                    <div class="input-group">
+                        <input class="input" type="text" placeholder="Placeholder..." value="Example">
+                        <button class="button">Button</button>
+                    </div>
+                    <div class="input-group">
+                        <input class="input" type="text" placeholder="Placeholder...">
+                        <button class="button">Button</button>
+                    </div>
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Disabled</h5>
+
+                    <div class="input-group">
+                        <input class="input" type="text" placeholder="Placeholder..." value="Example" disabled>
+                        <button class="button" disabled>Button</button>
+                    </div>
+                    <div class="input-group">
+                        <input class="input" type="text" placeholder="Placeholder..." disabled>
+                        <button class="button" disabled>Button</button>
+                    </div>
+                </div>
+
+                <div class="spacer">
+                    <h5 class="h5">Readonly</h5>
+
+                    <div class="input-group">
+                        <input class="input" type="text" placeholder="Placeholder..." value="Example" readonly>
+                        <button class="button" disabled>Button</button>
+                    </div>
+                    <div class="input-group">
+                    <input class="input" type="text" placeholder="Placeholder..." readonly>
+                        <button class="button" disabled>Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr">
 </body>
