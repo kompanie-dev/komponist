@@ -1,0 +1,27 @@
+.alert {
+    border-left: 4px solid var(--accent-color);
+    color: var(--element-color);
+    font-size: var(--font-size);
+    margin: 12px 0;
+    padding: 0.7rem 1rem;
+
+    &.error {
+        background: var(--error-background);
+        border-left: 4px solid var(--error-border-color);
+    }
+
+    &.info {
+        background: var(--info-background);
+        border-left: 4px solid var(--info-border-color);
+    }
+
+    &.success {
+        background: var(--success-background);
+        border-left: 4px solid var(--success-border-color);
+    }
+
+    &.warning {
+        background: var(--warning-background);
+        border-left: 4px solid var(--warning-border-color);
+    }
+}

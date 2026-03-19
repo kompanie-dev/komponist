@@ -1,6 +1,15 @@
 :root {
     --accent-color: #090;
 
+    --error-background: #200;
+    --error-border-color: #600;
+    --info-background: #002;
+    --info-border-color: #006;
+    --success-background: #020;
+    --success-border-color: #060;
+    --warning-background: #220;
+    --warning-border-color: #660;
+
     --body-background: #fff;
 
     --element-background: #bbb;
