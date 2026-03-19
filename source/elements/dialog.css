@@ -5,6 +5,7 @@
     color: var(--element-color);
     font-size: var(--font-size);
     overflow: hidden;
+    padding: 0;
 
     &::backdrop {
         background: var(--dialog-backdrop-background);
@@ -23,10 +24,10 @@
     padding: var(--dialog-padding);
 }
 
-.dialog-headline {
-    background: var(--dialog-headline-background);
+.dialog-header {
+    background: var(--dialog-header-background);
     border-bottom: 1px solid var(--element-border-color);
     display: flex;
-    font-weight: var(--dialog-headline-font-weight);
+    font-weight: var(--dialog-header-font-weight);
     padding: var(--dialog-padding);
 }
