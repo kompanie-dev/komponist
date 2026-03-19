@@ -44,8 +44,7 @@ a.button:hover,
   width: 1rem;
 }
 
-.input:is([type=checkbox], [type=radio], [type=range]),
-.progress {
+.input:is([type=checkbox], [type=radio], [type=range]) {
   accent-color: var(--accent-color);
 }
 
