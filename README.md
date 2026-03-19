@@ -1,6 +1,9 @@
 # Komponist 🎹
 
 Komponist is a dependency-free compact CSS framework for styling standard HTML elements.
+
+You can check out a demo of all styled elements and features using the [GitHub Pages demo](https://kompanie-dev.github.io/komponist/demo/).
+
 It contains styles for the following elements:
 
 * `<a>`
