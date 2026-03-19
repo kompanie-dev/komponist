@@ -11,6 +11,7 @@ It contains styles for the following elements:
 * `<div>`
 * `<h1> - <h6>`
 * `<hr>`
+* `<img>`
 * `<input>`
     * `checkbox`
     * `color`
